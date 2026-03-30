@@ -27,3 +27,65 @@ git commit -m "nome do commit" para dizer o nome do commit
 
 git push para publicar pro github
 
+
+
+1. DIAGRAMA DE ESTADOS DO GIT
+----------------------------------------------------------------
+O fluxo de um arquivo dentro do Git ocorre entre três áreas:
+
+  WORKING DIRECTORY ---- (git add) ---->     STAGING AREA 
+
+         I                                         I
+    (Arquivos sendo                       (Arquivos preparados
+     editados agora)                       para o próximo commit)
+
+          I                                         I
+          I                                         I
+          ------------- (git commit) ----------------
+                               |
+                               v
+                        LOCAL REPOSITORY
+                  (Histórico salvo localmente)
+
+Fluxo extra: LOCAL REPOSITORY --(git push)--> REMOTE REPOSITORY
+
+
+2. Roteiro de comandos
+
+1. Abrir o terminal na pasta do projeto.
+
+2. git pull origin main
+(Atualiza o código local com o que foi feito por outros)
+
+3. O desenvolvedor realiza as tarefas e alterações no código
+
+4. git status
+(Verifica quais arquivos foram alterados ou criados)
+
+5. git add .
+(Adiciona todas as mudanças à Staging Area)
+
+6. git commit -m "Descricao das melhorias feitas no dia"
+(Salva as alterações permanentemente no histórico local)
+
+7. git push origin main
+(Envia o trabalho finalizado para o servidor/GitHub)
+
+
+3. Baixar .ZIP x GIT CLONE
+
+
+A principal diferença reside no rastreamento e na conexão:
+
+- BAIXAR .ZIP: É apenas um "instantâneo" do código. 
+  Você recebe os arquivos, mas perde todo o histórico de versões, 
+  quem fez as alterações e não possui conexão com o servidor 
+  para enviar atualizações de volta. É uma cópia "morta".
+
+- GIT CLONE: Você cria a idêntica uma cópido repositório, incluindo
+  o banco de dados de histórico (pasta .git). Isso permite que você 
+  navegue por versões passadas, saiba exatamente o que foi mudado 
+  e mantenha um "link" com o GitHub para baixar novas mudanças ou 
+  enviar seu código de forma integrada.
+
+
