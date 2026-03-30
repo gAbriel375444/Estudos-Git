@@ -1,1 +1,5 @@
 git init -> serve pra iniciar um repositório local pelo terminal
+
+git add (nome do arquivo) -> adiciona o arquivo que eu quero ao repositório
+
+git add . -> adiciona todos os arquivos da pasta ao repositório  
