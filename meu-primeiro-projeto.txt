@@ -17,4 +17,13 @@ git remote add origin (url) -> serve pra ele achar o repositório do github
 git push -u origin (nome da branch principal) -> serve pra subir o repositório local pro github
 
 
+Para dar commit é simples:
+
+ctrl + S para salvar as alterações
+
+git add . no terminal para adicionar os arquivos
+
+git commit -m "nome do commit" para dizer o nome do commit
+
+git push para publicar pro github
 
