@@ -8,8 +8,13 @@ git add . -> adiciona todos os arquivos da pasta ao repositório
 
 git commit -m "nome do commit" -> commit são alterações
 
-
 git branch -M main -> serve pra criar uma branch nova ou inicar a master 
+
+
+git remote add origin (url) -> serve pra ligar o repositório local com o online
+o url tá no repositório do github
+
+
 
 
 
