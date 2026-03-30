@@ -1,5 +1,15 @@
 git init -> serve pra iniciar um repositório local pelo terminal
 
+
 git add (nome do arquivo) -> adiciona o arquivo que eu quero ao repositório
 
-git add . -> adiciona todos os arquivos da pasta ao repositório  
+git add . -> adiciona todos os arquivos da pasta ao repositório 
+
+
+git commit -m "nome do commit" -> commit são alterações
+
+
+git branch -M main -> serve pra criar uma branch nova ou inicar a master 
+
+
+
